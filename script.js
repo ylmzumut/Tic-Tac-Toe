@@ -5,7 +5,7 @@ const displayTitle = document.querySelector('.mainTitle');
 let gameActive = true;
 let currentPlayer = "X";
 let gameState = ["", "", "", "", "", "", "", "", ""];
-
+turkishText();
 var elementX = document.getElementById("playerX");
 var elementO = document.getElementById("playerO");
 
