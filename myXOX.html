@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title lang="tr">X-O-X</title>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="langHeader">
+        <div>
+            <table class="lang">
+                <tr>
+                    <td class="tdlang" >
+                        <span id="tr" class="button_lang current_lang" onclick="changeLang('tr')">TR</span>
+                    </td>
+                    <td class="tdlang"><span id="en" class="button_lang" onclick="changeLang('en')">EN</span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4 col-md-4 col-lg-4 playerBoard">
+            <section>
+                <span class="player" id="playerX">X</span>
+            </section>
+        </div>
+        <div class="col-4 col-md-4 col-lg-4">
+            <section>
+                <h1 class="mainTitle">X-O-X</h1>
+                <div class="playground">
+                    <div data-cell-index="0" class="xox cell-corner"></div>
+                    <div data-cell-index="1" class="xox cell-edge"></div>
+                    <div data-cell-index="2" class="xox cell-corner"></div>
+                    <div data-cell-index="3" class="xox cell-edge-side"></div>
+                    <div data-cell-index="4" class="xox cell"></div>
+                    <div data-cell-index="5" class="xox cell-edge-side"></div>
+                    <div data-cell-index="6" class="xox cell-corner"></div>
+                    <div data-cell-index="7" class="xox cell-edge"></div>
+                    <div data-cell-index="8" class="xox cell-corner"></div>
+                </div>
+                <h2 class="result"></h2>
+            </section>
+        </div>
+        <div class="col-4 col-md-4 col-lg-4 playerBoard">
+            <section>
+                <span class="player" id="playerO">0</span>
+            </section>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-left">
+            <a class="title-other" href="https://github.com/ylmzumut/Tic-Tac-Toe"><img class="logo-github"
+                    src="https://i.hizliresim.com/mmolqft.png" /> GITHUB REPO</a>
+        </div>
+        <button class="restart">YENIDEN BASLAT</button>
+        <span class="footer-title">
+            Created by&ensp;<a href="http://umutylmz.com/"><img class="footer-logo" src="https://i.hizliresim.com/3pj40tm.png" /></a>
+        </span>
+        <div class="footer-right">
+            <a class="title-other" href="https://github.com/ylmzumut/"><img class="logo-github" src="https://i.hizliresim.com/mmolqft.png" /></a>
+            <a class="title-other" href="https://www.linkedin.com/in/umutylmz/"><img class="logo-github" src="https://i.hizliresim.com/dwuiq9a.png" /></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
